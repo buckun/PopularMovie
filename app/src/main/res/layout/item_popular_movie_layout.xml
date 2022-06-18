@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.buckun.popularmovie.data.response.PopularMovieResponseItem"/>
+        <import type="com.buckun.popularmovie.utils.Constant"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/popularMovieContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/popularMovieNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="@{item.title}"
+            android:textColor="@color/dark_blue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/popularMovieLanguageTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="THE WALKING DEAD" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/popularMovieLanguageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@{item.original_language}"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/popularMovieNameTextView"
+            app:layout_constraintStart_toStartOf="@+id/popularMovieNameTextView"
+            app:layout_constraintTop_toBottomOf="@+id/popularMovieNameTextView"
+            tools:text="LANGUAGE" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
