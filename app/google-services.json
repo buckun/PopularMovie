@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "911359933029",
+    "project_id": "popularmovie-8e373",
+    "storage_bucket": "popularmovie-8e373.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911359933029:android:18f5184bc10a3adef9a48c",
+        "android_client_info": {
+          "package_name": "com.buckun.popularmovie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911359933029-ju9rtarrdk1hc8oarrl4uck6rbe7sdql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMhOHtZdOWXNMXCRPT3yQbwZU93yLBwq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911359933029-ju9rtarrdk1hc8oarrl4uck6rbe7sdql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

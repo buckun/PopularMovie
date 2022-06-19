@@ -6,4 +6,7 @@ object Constant {
     const val IMAGE_URL_START = "https://image.tmdb.org/t/p/w500"
 
     const val NETWORK_PAGE_SIZE = 20
+    const val PREFERENCES_NAME = "preferences"
+    const val PREFERENCES_BACK_ONLINE = "backOnline"
+
 }
