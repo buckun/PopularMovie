@@ -18,7 +18,7 @@ class PopularMovieViewHolder(private val binding: ItemPopularMovieLayoutBinding)
             i.putExtra("poster_path",popularMovieResponseItem.poster_path)
             i.putExtra("original_title",popularMovieResponseItem.original_title)
             i.putExtra("original_language",popularMovieResponseItem.original_language)
-            i.putExtra("first_air_date",popularMovieResponseItem.first_air_date)
+            i.putExtra("release_date",popularMovieResponseItem.release_date)
             i.putExtra("overview",popularMovieResponseItem.overview)
             binding.root.context.startActivity(i);
         }

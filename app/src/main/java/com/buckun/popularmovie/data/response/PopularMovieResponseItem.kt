@@ -9,5 +9,6 @@ data class PopularMovieResponseItem(
     val original_title:String?,
     val overview:String?,
     val vote_average:String?,
-    val first_air_date:String?
+    val first_air_date:String?,
+    val release_date:String?
 )

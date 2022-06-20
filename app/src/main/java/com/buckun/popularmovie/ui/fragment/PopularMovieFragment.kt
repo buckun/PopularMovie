@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.paging.LoadState
 import com.buckun.popularmovie.R
 import com.buckun.popularmovie.base.BaseFragment
@@ -58,14 +59,11 @@ class PopularMovieFragment : BaseFragment<FragmentPopularMovieBinding>()  {
                 networkListener.checkNetworkAvailability(it).collect { status ->
                     networkStateViewModel.networkStatus = status
                     networkStateViewModel.showNetworkStatus()
+                    if (!status) {
+                        findNavController().navigate(R.id.splashFragment)
+                    }
                 }
             }
         }
-
-        /*lifecycleScope.launch {
-            viewModel.getFirebase().collectLatest { response ->
-                Log.i("buckun","responese "+ response)
-            }
-        }*/
     }
 }

@@ -3,11 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/popularMovieFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/popularMovieFragment"
         android:name="com.buckun.popularmovie.ui.fragment.PopularMovieFragment"
         android:label="fragment_popular_movie"
         tools:layout="@layout/fragment_popular_movie" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.buckun.popularmovie.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_popularMovieFragment"
+            app:destination="@id/popularMovieFragment" />
+    </fragment>
 </navigation>

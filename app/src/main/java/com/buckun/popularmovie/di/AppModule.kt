@@ -1,7 +1,6 @@
 package com.buckun.popularmovie.di
 
 import com.buckun.popularmovie.data.api.ApiServices
-import com.buckun.popularmovie.data.datasource.FirebaseStoreSource
 import com.buckun.popularmovie.utils.Constant.BASE_URL
 import com.buckun.popularmovie.utils.CustomHttpLogger
 import com.google.firebase.database.FirebaseDatabase
