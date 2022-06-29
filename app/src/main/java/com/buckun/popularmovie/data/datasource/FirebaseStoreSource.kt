@@ -21,7 +21,7 @@ class FirebaseStoreSource constructor(
     fun getDateBaseValue() : Flow<String?> = callbackFlow {
         var result: String? = null
         val myRef = firebaseDatabase.getReference("value")
-        myRef.setValue("ETSTUR")
+        myRef.setValue("PopularMovie")
 
         // Read from the database
         val test = object: ValueEventListener {
